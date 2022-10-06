@@ -1,0 +1,1494 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Combo&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Silkscreen&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+nav,
+section,
+footer {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+
+body {
+  background-color: #defeca;
+}
+body nav {
+  background-color: #101010;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  box-shadow: 5px 5px 35px black;
+  border-radius: 0 0 0px 0px;
+  z-index: 2;
+}
+body nav h1 {
+  position: relative;
+  font-size: 45px;
+  left: 3%;
+  font-family: "Varela Round", sans-serif;
+  color: white;
+}
+body nav h1 span {
+  font-family: "Pacifico", cursive;
+  color: #ff8c00;
+}
+body nav form {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+body nav form input {
+  height: 55px;
+  padding: 20px;
+  width: 500px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+}
+body nav form input::-moz-placeholder {
+  color: white;
+  opacity: 0.4;
+}
+body nav form input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.4;
+}
+body nav form input::placeholder {
+  color: white;
+  opacity: 0.4;
+}
+body nav form button {
+  position: relative;
+  top: -5%;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+body nav form button:hover {
+  background-color: #ff8c00;
+  color: #101010;
+}
+body nav .addtocard {
+  position: absolute;
+  left: 86%;
+  top: 22%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #ff8c00;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+body nav .addtocard:hover {
+  background-color: #ff8c00;
+  color: #101010;
+}
+body nav .addtocard i {
+  position: relative;
+  top: 9px;
+}
+body nav .profile {
+  position: absolute;
+  left: 80%;
+  top: 19%;
+}
+body nav .profile button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 5px;
+  color: #ff8c00;
+  font-size: 30px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+body nav .profile button:hover {
+  color: #101010;
+}
+body nav .menu {
+  position: absolute;
+  left: 92%;
+  top: 22%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #ff8c00;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+body nav .menu:hover {
+  background-color: #ff8c00;
+  color: #101010;
+}
+body nav .menu i {
+  position: relative;
+  top: 5px;
+}
+body ::-moz-selection {
+  background-color: #ff8c00;
+  color: #101010;
+}
+body ::selection {
+  background-color: #ff8c00;
+  color: #101010;
+}
+body .container1 {
+  background-color: transparent;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container1 .scroll-Bar button {
+  position: fixed;
+  z-index: 2;
+  left: 95%;
+  top: 90%;
+  font-size: 35px;
+  background-color: #ff8c00;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+body .container1 .rect {
+  background-color: #dfe3ee;
+  padding: 0 20px 0 20px;
+  height: 400px;
+  width: 80%;
+  position: relative;
+  top: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 20px;
+  box-shadow: 3px -2px 31px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px -2px 31px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px -2px 31px 1px rgba(0, 0, 0, 0.75);
+}
+body .container1 .rect .item1 {
+  background-color: transparent;
+}
+body .container1 .rect .item1 h1 {
+  font-size: 65px;
+  color: black;
+  font-family: "Varela Round", sans-serif;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+}
+body .container1 .rect .item1 h2 {
+  position: absolute;
+  color: #ff8c00;
+  top: 40%;
+  left: 15%;
+  font-size: 30px;
+}
+body .container1 .rect .item1 h3 {
+  position: absolute;
+  color: #ff8c00;
+  top: 55%;
+  left: 10%;
+  font-size: 30px;
+}
+body .container1 .rect .item1 h3 span {
+  font-size: 25px;
+  color: #101010;
+  background-color: #ff8c00;
+  border: 2px solid #101010;
+  padding: 5px;
+  height: 10px;
+  border-radius: 20px;
+}
+body .container1 .rect .item1 form {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+body .container1 .rect .item1 form button {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+body .container1 .rect .item1 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container1 .rect .item2-img {
+  background-color: transparent;
+}
+body .container1 .rect .item2-img img {
+  position: relative;
+  left: 10%;
+  top: 30px;
+}
+body .container2 {
+  height: 700px;
+}
+body .container2 h3 {
+  position: relative;
+  top: 10%;
+  left: 5%;
+  font-size: 30px;
+  color: rgb(68, 68, 80);
+  border-bottom: 5px solid rgb(68, 68, 80);
+  width: 180px;
+}
+body .container2 .grid-items {
+  position: relative;
+  border-radius: 5px;
+  top: 20%;
+  left: 2.8%;
+  background-color: transparent;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+body .container2 .grid-items .beauty-product {
+  margin: 1px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .beauty-product form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .beauty-product form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/beauty-pro.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .beauty-product form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/beauty-pro.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .beauty-product form button:hover::before {
+  content: "Beauty Products";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .Men-clothing {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .Men-clothing form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .Men-clothing form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/mens-clothing.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .Men-clothing form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/mens-clothing.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .Men-clothing form button:hover::before {
+  content: "Men's Clothes";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .women-clothing {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .women-clothing form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .women-clothing form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/women-clothing.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .women-clothing form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/women-clothing.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .women-clothing form button:hover::before {
+  content: "Women's Clothes";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .sneakers {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .sneakers form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .sneakers form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/sneaker.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .sneakers form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/sneaker.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .sneakers form button:hover::before {
+  content: "Sneakers";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .kitchen-set {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .kitchen-set form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .kitchen-set form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/kitch-pro.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .kitchen-set form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/kitch-pro.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .kitchen-set form button:hover::before {
+  content: "Kitchen Products";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .groceries {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .groceries form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .groceries form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/groc.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .groceries form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/groc.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .groceries form button:hover::before {
+  content: "Groceries";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .mobiles {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .mobiles form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .mobiles form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .mobiles form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/mobile.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .mobiles form button:hover::before {
+  content: "Mobiles";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .Electronic-Accessories {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .Electronic-Accessories form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .Electronic-Accessories form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/acc.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .Electronic-Accessories form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/acc.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .Electronic-Accessories form button:hover::before {
+  content: "Accessories";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .eye-care {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .eye-care form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .eye-care form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/glasses.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .eye-care form button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/glasses.jpg");
+  transition: 0.3 ease;
+}
+body .container2 .grid-items .eye-care form button:hover::before {
+  content: "Eye-Care";
+  color: white;
+  font-size: 23px;
+}
+body .container2 .grid-items .watches {
+  margin: 1px;
+  height: 210px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container2 .grid-items .watches form {
+  height: 100%;
+  width: 100%;
+}
+body .container2 .grid-items .watches form button {
+  height: 100%;
+  width: 100%;
+  background-image: url("Categories/watch.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body .container2 .grid-items .watches form button:hover {
+  transition: 0.3 ease;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("Categories/watch.jpg");
+}
+body .container2 .grid-items .watches form button:hover::before {
+  content: "Watches";
+  color: white;
+  font-size: 23px;
+}
+body .container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2000px;
+  width: 100%;
+}
+body .container3 h1 {
+  border-bottom: 5px solid rgb(68, 68, 80);
+  position: relative;
+  right: 38%;
+  font-size: 30px;
+  color: rgb(68, 68, 80);
+}
+body .container3 .products {
+  position: relative;
+  top: 3%;
+  height: 1700px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+body .container3 .products .grid1 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid1 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid1 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid1 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid1 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid1 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid1 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid1 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid1 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid1 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid2 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid2 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid2 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid2 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid2 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid2 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid2 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid2 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid2 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid2 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid3 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid3 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid3 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid3 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid3 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid3 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid3 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid3 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid3 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid3 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid4 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid4 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid4 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid4 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid4 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid4 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid4 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid4 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid4 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid4 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid5 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid5 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid5 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid5 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid5 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid5 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid5 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid5 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid5 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid5 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid6 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid6 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid6 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid6 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid6 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid6 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid6 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid6 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid6 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid6 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid7 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid7 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid7 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid7 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid7 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid7 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid7 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid7 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid7 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid7 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid8 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid8 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid8 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid8 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid8 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid8 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid8 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid8 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid8 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid8 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid9 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid9 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid9 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid9 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid9 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid9 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid9 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid9 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid9 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid9 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid10 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid10 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid10 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid10 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid10 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid10 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid10 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid10 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid10 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid10 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid11 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid11 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid11 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid11 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid11 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid11 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid11 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid11 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid11 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid11 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body .container3 .products .grid12 {
+  background-color: #101010;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 10px;
+}
+body .container3 .products .grid12 img {
+  border-radius: 10px;
+}
+body .container3 .products .grid12 h3 {
+  color: white;
+  font-size: 25px;
+  border-left: 5px solid #ff8c00;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+body .container3 .products .grid12 h3 a {
+  text-decoration: none;
+  color: white;
+}
+body .container3 .products .grid12 h4 {
+  font-weight: 400;
+  color: #ff8c00;
+  font-size: 20px;
+  padding-left: 10px;
+  position: relative;
+  left: 5%;
+  top: 16%;
+}
+body .container3 .products .grid12 h4 span {
+  text-decoration: line-through;
+  color: white;
+}
+body .container3 .products .grid12 .stars {
+  font-size: 25px;
+  position: relative;
+  left: 20%;
+  top: 2.5%;
+  color: #ff8c00;
+  font-weight: 400;
+}
+body .container3 .products .grid12 form {
+  position: relative;
+  top: 70px;
+}
+body .container3 .products .grid12 form button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 90%;
+  height: 50px;
+  position: relative;
+  left: 5%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+body .container3 .products .grid12 form button:hover {
+  background-color: #ff8c00;
+  color: black;
+}
+body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+  width: 100%;
+  height: 300px;
+}
+body footer .About-us {
+  width: 32%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body footer .About-us ul li {
+  margin: 20px;
+  list-style: none;
+}
+body footer .About-us ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #dfe3ee;
+}
+body footer .About-us ul li a:hover {
+  color: #ff8c00;
+}
+body footer .contact-us {
+  width: 32%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body footer .contact-us ul li {
+  margin: 20px;
+  list-style: none;
+}
+body footer .contact-us ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #dfe3ee;
+}
+body footer .contact-us ul li a:hover {
+  color: #ff8c00;
+}
+body footer .payment-partner {
+  width: 32%;
+  height: 280px;
+}
+body footer .payment-partner h1 {
+  font-size: 23px;
+  position: relative;
+  top: 15%;
+  left: 5%;
+  color: #dfe3ee;
+}
+body footer .payment-partner .images {
+  position: relative;
+  top: 25%;
+  left: 10%;
+  width: 90%;
+}
+
+@media screen and (max-width: 1140px) {
+  body nav form {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+  }
+  body nav form input {
+    width: 400px;
+  }
+  body .container3 .products {
+    height: 1500px;
+  }
+  body .container3 .products .grid1 h3,
+body .container3 .products .grid2 h3,
+body .container3 .products .grid3 h3,
+body .container3 .products .grid4 h3,
+body .container3 .products .grid5 h3,
+body .container3 .products .grid6 h3,
+body .container3 .products .grid7 h3,
+body .container3 .products .grid8 h3,
+body .container3 .products .grid9 h3,
+body .container3 .products .grid10 h3,
+body .container3 .products .grid11 h3,
+body .container3 .products .grid12 h3 {
+    font-size: 20px;
+  }
+  body .container3 .products .grid1 img,
+body .container3 .products .grid2 img,
+body .container3 .products .grid3 img,
+body .container3 .products .grid4 img,
+body .container3 .products .grid5 img,
+body .container3 .products .grid6 img,
+body .container3 .products .grid7 img,
+body .container3 .products .grid8 img,
+body .container3 .products .grid9 img,
+body .container3 .products .grid10 img,
+body .container3 .products .grid11 img,
+body .container3 .products .grid12 img {
+    height: 250px;
+  }
+}/*# sourceMappingURL=style.css.map */

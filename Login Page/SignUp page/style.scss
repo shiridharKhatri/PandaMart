@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Combo&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Silkscreen&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+  height: 100vh;
+  width: 100%;
+  #card {
+    overflow: hidden;
+    background-color: #2c2c2c;
+    height: 550px;
+    width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 35px black;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 900px;
+      width: 900px;
+      background-image: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        #ff8c00
+      );
+      animation: rotating 3s linear infinite;
+      @keyframes rotating {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 900px;
+      width: 900px;
+      background-image: conic-gradient(
+        from 180deg,
+        transparent,
+        transparent,
+        transparent,
+        #3cdfff
+      );
+      animation: rotatingTwo 3s linear infinite;
+      @keyframes rotatingTwo {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    .second-card {
+      background-color: #2c2c2c;
+      height: 98%;
+      width: 98%;
+      border-radius: 10px;
+      z-index: 2;
+      h1 {
+        position: relative;
+        font-size: 50px;
+        left: 25%;
+        font-family: "Varela Round", sans-serif;
+        color: white;
+        span {
+          font-family: "Pacifico", cursive;
+          color: #ff8c00;
+        }
+        .login-page {
+          font-family: "Varela Round", sans-serif;
+          font-size: 20px;
+          color: white;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .email-text{
+            position: relative;
+            right: 40.5%;
+        }
+        .password-text{
+            position: relative;
+            right: 38%;
+        }
+        label{
+            font-size: 20px;
+            margin: 15px 0 10px 0;
+            color: white;
+            position: relative;
+            right: 30%;
+        }
+        input{
+            width: 90%;
+            padding: 11px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+        button {
+          background-color: #ff8c00;
+          border-color: black;
+          color: black;
+          font-weight: 400;
+          font-size: 20px;
+          width: 90%;
+          height: 50px;
+          margin-top: 20px;
+          border-radius: 5px;
+           cursor: pointer;
+          &:hover {
+            background-color: transparent;
+            border-color: white;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1564 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Caveat&family=Combo&family=Concert+One&family=Dancing+Script&family=DynaPuff:wght@400;500&family=Lexend:wght@500&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&family=Silkscreen&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+$primary: #ff8c00;
+
+nav,
+section,
+footer {
+  overflow: hidden;
+  white-space: wrap;
+  word-break: break-word;
+}
+body {
+  background-color: #defeca;
+  nav {
+    background-color: #101010;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    box-shadow: 5px 5px 35px black;
+    border-radius: 0 0 0px 0px;
+    z-index: 2;
+    h1 {
+      position: relative;
+      font-size: 45px;
+      left: 3%;
+      font-family: "Varela Round", sans-serif;
+      color: white;
+      span {
+        font-family: "Pacifico", cursive;
+        color: #ff8c00;
+      }
+    }
+
+    form {
+      position: absolute;
+      top: 20%;
+      left: 30%;
+
+      input {
+        height: 55px;
+        padding: 20px;
+        width: 500px;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        border-radius: 30px;
+        font-size: 20px;
+        color: white;
+        &::placeholder {
+          color: white;
+          opacity: 0.4;
+        }
+      }
+      button {
+        position: relative;
+        top: -5%;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        &:hover {
+          background-color: #ff8c00;
+          color: #101010;
+        }
+      }
+    }
+    .addtocard {
+      position: absolute;
+      left: 86%;
+      top: 22%;
+      font-size: 30px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      color: #ff8c00;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      &:hover {
+        background-color: #ff8c00;
+        color: #101010;
+      }
+      i {
+        position: relative;
+        top: 9px;
+      }
+    }
+    .profile {
+      position: absolute;
+      left: 80%;
+      top: 19%;
+
+      button {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: 5px;
+        color: #ff8c00;
+        font-size: 30px;
+        border: none;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: #101010;
+        }
+      }
+    }
+    .menu {
+      position: absolute;
+      left: 92%;
+      top: 22%;
+      font-size: 30px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      color: #ff8c00;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      &:hover {
+        background-color: #ff8c00;
+        color: #101010;
+      }
+      i {
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+  ::selection {
+    background-color: #ff8c00;
+    color: #101010;
+  }
+  .container1 {
+    background-color: transparent;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .scroll-Bar {
+      button {
+        position: fixed;
+        z-index: 2;
+        left: 95%;
+        top: 90%;
+        font-size: 35px;
+        background-color: #ff8c00;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+
+    .rect {
+      background-color: #dfe3ee;
+      padding: 0 20px 0 20px;
+      height: 400px;
+      width: 80%;
+      position: relative;
+      top: 10%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-radius: 20px;
+      box-shadow: 3px -2px 31px 1px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 3px -2px 31px 1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 3px -2px 31px 1px rgba(0, 0, 0, 0.75);
+      .item1 {
+        background-color: transparent;
+        h1 {
+          font-size: 65px;
+          color: black;
+          font-family: "Varela Round", sans-serif;
+          position: absolute;
+          left: 10%;
+          top: 15%;
+        }
+        h2 {
+          position: absolute;
+          color: $primary;
+          top: 40%;
+          left: 15%;
+          font-size: 30px;
+        }
+        h3 {
+          position: absolute;
+          color: $primary;
+          top: 55%;
+          left: 10%;
+          font-size: 30px;
+          span {
+            font-size: 25px;
+            color: #101010;
+            background-color: #ff8c00;
+            border: 2px solid #101010;
+            padding: 5px;
+            height: 10px;
+            border-radius: 20px;
+          }
+        }
+        form {
+          position: absolute;
+          top: 75%;
+          left: 10%;
+          button {
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .item2-img {
+        background-color: transparent;
+        img {
+          position: relative;
+          left: 10%;
+          top: 30px;
+        }
+      }
+    }
+  }
+  .container2 {
+    height: 700px;
+    h3 {
+      position: relative;
+      top: 10%;
+      left: 5%;
+      font-size: 30px;
+      color: rgb(68, 68, 80);
+      border-bottom: 5px solid rgb(68, 68, 80);
+      width: 180px;
+    }
+    .grid-items {
+      position: relative;
+      border-radius: 5px;
+      top: 20%;
+      left: 2.8%;
+      background-color: transparent;
+      width: 95%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+
+      .beauty-product {
+        margin: 1px;
+        height: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/beauty-pro.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/beauty-pro.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Beauty Products";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .Men-clothing {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/mens-clothing.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/mens-clothing.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Men's Clothes";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .women-clothing {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/women-clothing.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/women-clothing.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Women's Clothes";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .sneakers {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/sneaker.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/sneaker.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Sneakers";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+
+      .kitchen-set {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/kitch-pro.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/kitch-pro.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Kitchen Products";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .groceries {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/groc.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/groc.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Groceries";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .mobiles {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/mobile.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/mobile.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Mobiles";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .Electronic-Accessories {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/acc.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/acc.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Accessories";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .eye-care {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/glasses.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/glasses.jpg");
+              transition: 0.3 ease;
+
+              &::before {
+                content: "Eye-Care";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+      .watches {
+        margin: 1px;
+        height: 210px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+          height: 100%;
+          width: 100%;
+          button {
+            height: 100%;
+            width: 100%;
+            background-image: url("Categories/watch.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+              transition: 0.3 ease;
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.9),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url("Categories/watch.jpg");
+
+              &::before {
+                content: "Watches";
+                color: white;
+                font-size: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container3 {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2000px;
+    width: 100%;
+    h1 {
+      border-bottom: 5px solid rgb(68, 68, 80);
+      position: relative;
+      right: 38%;
+      font-size: 30px;
+      color: rgb(68, 68, 80);
+    }
+    .products {
+      // background-color: green;
+      position: relative;
+      top: 3%;
+      height: 1700px;
+      width: 95%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      .grid1 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid2 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid3 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid4 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid5 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid6 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid7 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid8 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid9 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid10 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid11 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+      .grid12 {
+        background-color: #101010;
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 10px;
+        img {
+          border-radius: 10px;
+        }
+        h3 {
+          color: white;
+          font-size: 25px;
+          border-left: 5px solid $primary;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 5%;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+        h4 {
+          font-weight: 400;
+          color: $primary;
+          font-size: 20px;
+          padding-left: 10px;
+          position: relative;
+          left: 5%;
+          top: 16%;
+          span {
+            text-decoration: line-through;
+            color: white;
+          }
+        }
+        .stars {
+          font-size: 25px;
+          position: relative;
+          left: 20%;
+          top: 2.5%;
+          color: #ff8c00;
+          font-weight: 400;
+        }
+        form {
+          position: relative;
+          top: 70px;
+          button {
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+            height: 50px;
+            position: relative;
+            left: 5%;
+            border: 3px solid white;
+            background-color: transparent;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: $primary;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101010;
+    width: 100%;
+    height: 300px;
+    .About-us {
+      width: 32%;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      ul {
+        li {
+          margin: 20px;
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #dfe3ee;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .contact-us {
+      width: 32%;
+      height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      ul {
+        li {
+          margin: 20px;
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #dfe3ee;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .payment-partner {
+      width: 32%;
+      height: 280px;
+      h1 {
+        font-size: 23px;
+        position: relative;
+        top: 15%;
+        left: 5%;
+        color: #dfe3ee;
+      }
+      .images {
+        position: relative;
+        top: 25%;
+        left: 10%;
+        width: 90%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1140px) {
+  body {
+    nav {
+      form {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+
+        input {
+          width: 400px;
+        }
+      }
+    }
+    .container3 {
+      .products {
+        height: 1500px;
+        .grid1,
+        .grid2,
+        .grid3,
+        .grid4,
+        .grid5,
+        .grid6,
+        .grid7,
+        .grid8,
+        .grid9,
+        .grid10,
+        .grid11,
+        .grid12 {
+          h3 {
+            font-size: 20px;
+          }
+          img {
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}
